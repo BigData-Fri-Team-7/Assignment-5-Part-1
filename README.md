@@ -45,3 +45,22 @@ The system comprises:
 
 ##Architectural diagram
 ![Editor _ Mermaid Chart-2025-03-28-210931](https://github.com/user-attachments/assets/b81d7565-6e0d-4843-a28c-8e00cb9eb13e)
+
+Prerequisites
+Python 3.9+
+
+Pinecone account and index created (e.g. "bigdata5")
+
+Snowflake account/database (table NVIDIA_FINANCIALS)
+
+API keys for:
+
+Snowflake (SNOWFLAKE_USER, SNOWFLAKE_PASSWORD, etc.)
+
+Pinecone (PINECONE_API_KEY, PINECONE_REGION)
+
+Tavily / SerpAPI (TAVILY_API_KEY, SERPAPI_API_KEY) for web search
+
+OpenAI (OPENAI_API_KEY) if using GPT models
+
+Docker (optional, if you plan to containerize)
