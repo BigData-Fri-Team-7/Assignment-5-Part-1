@@ -64,3 +64,58 @@ Tavily / SerpAPI (TAVILY_API_KEY, SERPAPI_API_KEY) for web search
 OpenAI (OPENAI_API_KEY) if using GPT models
 
 Docker (optional, if you plan to containerize)
+Environment Setup
+Create a .env file in your project root. An example:
+
+bash
+Copy
+Edit
+# Snowflake
+SNOWFLAKE_USER="YOUR_SNOWFLAKE_USER"
+SNOWFLAKE_PASSWORD="YOUR_SNOWFLAKE_PASSWORD"
+SNOWFLAKE_ACCOUNT="YOUR_SNOWFLAKE_ACCOUNT"
+SNOWFLAKE_DATABASE="YOUR_DB"
+SNOWFLAKE_SCHEMA="YOUR_SCHEMA"
+SNOWFLAKE_WAREHOUSE="YOUR_WAREHOUSE"
+SNOWFLAKE_STAGE="YOUR_STAGE"
+
+# Pinecone
+PINECONE_API_KEY="YOUR_PINECONE_KEY"
+PINECONE_REGION="YOUR_PINECONE_REGION"
+
+# Web Search
+TAVILY_API_KEY="YOUR_TAVILY_KEY"
+
+# OpenAI
+OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
+
+# Etc...
+Note: Keep your .env private! Never commit API keys to a public repository.
+
+Installation
+Clone or Download the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/nvidia-research-assistant.git
+cd nvidia-research-assistant
+Install Python Dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Make sure requirements.txt includes packages like fastapi, uvicorn, streamlit, langchain, sentence-transformers, pinecone-client, snowflake-connector-python, pydantic, etc.
+
+Populate Snowflake (if not done already):
+
+Ensure NVIDIA_FINANCIALS table is created.
+
+Use scripts like quarterly.py or NVIDIA_Snowflake_conn.py to load CSV data.
+
+Check Pinecone Index:
+
+Confirm an index matching your config (INDEX_NAME = "bigdata5") is created in the Pinecone dashboard.
+
+Make sure the dimension (e.g., 384 for all-MiniLM-L6-v2) matches your embedding model.
