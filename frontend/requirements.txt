@@ -22,6 +22,7 @@ litellm
 google-generativeai
 openai
 anthropic
+langchain-community
 
 # Pinecone and embeddings
 pinecone-client

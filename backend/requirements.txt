@@ -15,3 +15,5 @@ pinecone
 sentence-transformers
 yahooquery
 tavily-python
+langchain-community
+
