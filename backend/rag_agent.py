@@ -6,8 +6,8 @@ from langgraph.graph import StateGraph, END
 from langchain_core.runnables import RunnableLambda
 
 # Import our Pinecone functions and LLM chat function
-from .pinecone_embeds import query_pinecone, INDEX_NAME, pc
-from .llm_chat import get_llm_response
+from  pinecone_embeds import query_pinecone, INDEX_NAME, pc
+from  llm_chat import get_llm_response
 
 # Load environment variables from .env
 load_dotenv()

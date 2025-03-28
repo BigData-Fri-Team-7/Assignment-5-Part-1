@@ -9,9 +9,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Use relative imports because app.py is in the same package as the other modules.
-from .rag_agent import build_graph
-from .langgraph_app import query_snowflake
-from .web_search_agent import tavily_search
+from  rag_agent import build_graph
+from  langgraph_app import query_snowflake
+from  web_search_agent import tavily_search
 
 app = FastAPI(title="NVIDIA Research Assistant API")
 
