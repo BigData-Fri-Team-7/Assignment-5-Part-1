@@ -6,7 +6,7 @@ import pandas as pd
 import base64
 
 # URL for the FastAPI report endpoint (adjust if running on a different host/port)
-API_URL = "http://localhost:8000/report"
+API_URL = "http://34.28.77.168/:8000/report"
 
 st.set_page_config(page_title="NVIDIA Research Assistant", layout="wide")
 st.title("🔍 NVIDIA Multi-Agent Research Assistant")
