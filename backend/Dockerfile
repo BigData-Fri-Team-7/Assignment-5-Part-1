@@ -16,4 +16,4 @@ EXPOSE 8000
 
 # Command to run the FastAPI application using uvicorn.
 # Here we choose the file that is intended as the entry point.
-CMD ["uvicorn", "web_search_agent:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "backend.web_search_agent:app", "--host", "0.0.0.0", "--port", "8000"]
