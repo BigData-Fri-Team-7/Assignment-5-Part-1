@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+python-dotenv
+snowflake-connector-python
+pandas
+matplotlib
+langchain
+langgraph
+tiktoken
+litellm
+google-generativeai
+openai
+anthropic
+pinecone-client
+sentence-transformers
+yahooquery
+tavily-python
