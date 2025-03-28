@@ -41,5 +41,7 @@ The system comprises:
    - **Pinecone**: Stores chunked embedding vectors of NVIDIA reports, with year/quarter metadata.  
    - **Snowflake**: Holds structured financial data for NVIDIA.  
    - **Tavily / Web**: Provides real-time search results.
+
+
 ##Architectural diagram
 ![Editor _ Mermaid Chart-2025-03-28-210931](https://github.com/user-attachments/assets/b81d7565-6e0d-4843-a28c-8e00cb9eb13e)
