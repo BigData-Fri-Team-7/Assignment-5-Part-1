@@ -31,8 +31,11 @@ class ReportRequest(BaseModel):
 
 # Tavily Web Search using TavilyClient
 def tavily_search(query: str, num_results: int = 10) -> list:
+    api_key = os.environ.get("TAVILY_API_KEY")
+    if not api_key:
+        raise Exception("TAVILY_API_KEY is not set in the environment.")
     
-    api_key = "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"
+    #api_key = "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"
     # Instantiate the Tavily client
     client = TavilyClient(api_key=api_key)
     response = client.search(query)
