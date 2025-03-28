@@ -5,7 +5,8 @@ import snowflake.connector
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
-from langchain_openai import ChatOpenAI
+
+from langchain.chat_models import ChatOpenAI
 from langchain.agents import initialize_agent, AgentType
 from langchain.tools import tool
 
