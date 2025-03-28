@@ -1,14 +1,15 @@
 import snowflake.connector
+import os
 import pandas as pd
 
 # Snowflake connection details
-SNOWFLAKE_USER = "RupamP"
-SNOWFLAKE_PASSWORD = "Rupam@1998"
-SNOWFLAKE_ACCOUNT = "qxqznhd-qz34352"  # Example: "xyz12345.region"
-SNOWFLAKE_DATABASE = "NVIDIA"
-SNOWFLAKE_SCHEMA = "NVIDIA_SCHEMA"
-SNOWFLAKE_WAREHOUSE = "COMPUTE_WH"
-SNOWFLAKE_STAGE = "nvidia_stage"
+SNOWFLAKE_USER = os.getenv("SNOWFLAKE_USER")
+SNOWFLAKE_PASSWORD = os.getenv("SNOWFLAKE_PASSWORD")
+SNOWFLAKE_ACCOUNT = os.getenv("SNOWFLAKE_ACCOUNT")
+SNOWFLAKE_DATABASE = os.getenv("SNOWFLAKE_DATABASE")
+SNOWFLAKE_SCHEMA = os.getenv("SNOWFLAKE_SCHEMA")
+SNOWFLAKE_WAREHOUSE = os.getenv("SNOWFLAKE_WAREHOUSE")
+SNOWFLAKE_STAGE = os.getenv("SNOWFLAKE_STAGE")
 
 # Connect to Snowflake
 conn = snowflake.connector.connect(
