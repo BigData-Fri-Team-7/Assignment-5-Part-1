@@ -12,8 +12,8 @@ from tavily import TavilyClient
 load_dotenv()
 
 # Import existing agents and helpers
-from .rag_agent import rag_agent, build_graph, RAGState
-from .langgraph_app import query_snowflake
+from  rag_agent import rag_agent, build_graph, RAGState
+from  langgraph_app import query_snowflake
 
 app = FastAPI(title="NVIDIA Research Assistant API")
 
