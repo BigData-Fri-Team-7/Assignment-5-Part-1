@@ -11,7 +11,7 @@ litellm
 google-generativeai
 openai
 anthropic
-pinecone-client
+pinecone
 sentence-transformers
 yahooquery
 tavily-python
