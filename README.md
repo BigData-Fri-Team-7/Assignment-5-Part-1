@@ -22,5 +22,24 @@ The integrated system produces research reports that include historical performa
 - **User-Friendly Interface:** Streamlit UI with FastAPI backend for research question input and filtering.
 - **Dockerized Deployment:** Ready for cloud deployment with a streamlined Docker setup.
 
+## Architecture
+
+The system comprises:
+
+1. **Streamlit Frontend**  
+   - Collects user input (questions, year, quarter, and agent selection).  
+   - Displays consolidated results (historical analysis, charts, real-time insights).
+
+2. **FastAPI Backend**  
+   - Receives requests from Streamlit at `/report` or other endpoints.  
+   - Orchestrates calls to:
+     - **RAG Agent** for Pinecone retrieval and LLM summarization.
+     - **Snowflake Agent** to generate textual/visual summaries of numeric data.
+     - **Web Agent** for real-time industry headlines.
+
+3. **Data Sources**  
+   - **Pinecone**: Stores chunked embedding vectors of NVIDIA reports, with year/quarter metadata.  
+   - **Snowflake**: Holds structured financial data for NVIDIA.  
+   - **Tavily / Web**: Provides real-time search results.
 ##Architectural diagram
 ![Editor _ Mermaid Chart-2025-03-28-210931](https://github.com/user-attachments/assets/b81d7565-6e0d-4843-a28c-8e00cb9eb13e)
