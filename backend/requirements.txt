@@ -16,4 +16,5 @@ sentence-transformers
 yahooquery
 tavily-python
 langchain-community
+google-search-results==2.4.2
 
