@@ -6,6 +6,8 @@ An integrated research assistant that leverages three specialized agents to prov
 #Backend URL:http://34.28.77.168:8000/
 
 #Demo Video:https://www.loom.com/share/e49782356b9e4166a6a05f40c66b6291?sid=5430a24b-edd1-4400-804d-8e07125b8d40
+
+##Code Lab: https://codelabs-preview.appspot.com/?file_id=1puXxuXqOF42bGrze0aGEXMlsrtask7rusJ0M6XoU4oQ#0
 ## Overview
 
 This project builds on our previous work (Assignment 4.2) to create an agentic multi-agent system that:
